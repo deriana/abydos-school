@@ -1,0 +1,186 @@
+.course {
+    cursor: default;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 5% 0%;
+    align-items: center;
+}
+
+.course-title > p {
+    width: 70%;
+    font-size: 1.2em;
+}
+
+.course-title > h1 {
+    font-size: 2.5em;
+}
+
+.course-title {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.course-title-container-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-title-container-item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-title-container-item-text-people {
+    display: flex;
+}
+
+.course-container-item-text-people-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.course-container-item {
+    border: 1px solid rgba(128, 128, 128, 0.623);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.course-container-item > i {
+    font-size: 3em;
+    color: #5B99C2;
+    background: #5b99c246;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.course-container-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course-container-item-text > h3 {
+    font-size: 1.5em;
+    text-align: left !important;
+}
+
+.course-container-item-text-people {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.course-container-item-text-people-content {
+    align-items: center;
+    gap: 10px;
+    color: rgb(170, 170, 170);
+    font-size: 0.8em;
+}
+
+.course-container-item-text > a {
+    color: rgb(168, 168, 168);
+}
+
+.course > button {
+    padding: 20px 60px;
+    font-size: 1em;
+    background: transparent;
+    font-weight: 600;
+    color: #921A40;
+    border: 3px solid #921A40;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.course > button:hover {
+    background-color: #921A40;
+    color: white;
+}
+
+.course-container-item:nth-child(2) > i {
+    color: #C8A1E0;
+    background-color: #c8a1e073;
+}
+.course-container-item:nth-child(3) > i {
+    color: #6C946F;
+    background-color: #6C946F73;
+}
+.course-container-item:nth-child(4) > i {
+    color: #FFAF00;
+    background-color: #FFAF0073;
+}
+.course-container-item:nth-child(5) > i {
+    color: #03414D;
+    background-color: #03414D73;
+}
+.course-container-item:nth-child(6) > i {
+    color: #3E3232;
+    background-color: #3E323273;
+}
+.course-container-item:nth-child(7) > i {
+    color: #003744;
+    background-color: #00374473;
+}
+.course-container-item:nth-child(8) > i {
+    color: #A02334;
+    background-color: #A0233473;
+}
+
+.course-container-item:hover{
+    box-shadow: 0 0 20px #0000005e;
+    a {
+        color: #921A40;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+}
+}
+
+.course-container-item {
+    cursor: pointer;
+}
+
+.course-container-item {
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}

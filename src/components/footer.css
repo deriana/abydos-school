@@ -1,0 +1,119 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 0;
+    background: rgba(194, 194, 194, 0.404);
+}
+
+.title-footer {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 30px;
+}
+
+.nav-sosmed {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-sosmed>a {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #921A40;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #921A40;
+    font-weight: 500;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.nav-sosmed>a:hover {
+    background: #921A40;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-nav>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-input>p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #921A40;
+}
+
+.footer-input-content {
+    input {
+        padding: 10px;
+        border: 2px solid #921a407c;
+        border-radius: 10px 0 0 10px;
+        -webkit-border-radius: 10px 0 0 10px;
+        -moz-border-radius: 10px 0 0 10px;
+        -ms-border-radius: 10px 0 0 10px;
+        -o-border-radius: 10px 0 0 10px;
+    }
+}
+
+.footer-input-content> input::placeholder {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.footer-input-content > input:focus {
+    outline: none;
+}
+
+.footer-input-content > button {
+    padding: 10px 20px;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+    border: none;
+    color: white;
+    background: #921A40;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.footer-input-content > button:hover {
+    background: #fff;
+    color: #921A40;
+    transition: 0.5s;
+}

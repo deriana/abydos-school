@@ -1,0 +1,86 @@
+.tutor {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    gap: 70px;
+    align-items: center;
+}
+
+.tutor-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+
+.tutor-text > h1 {
+    font-size: 2.5em;
+}
+
+.tutor-text > p {
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.tutor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+}
+
+.tutor-content {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid black;
+    */gap: 50px;
+    padding: 30px;
+    /*text-align: left;
+    */width: 300px;
+    background: #921a4038;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.tutor-content:hover {
+    opacity: 1;
+}
+
+.tutor-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tutor-content-text > h3 {
+    font-size: 1.3em;
+}
+
+.tutor-content-text > p {
+    font-size: 1em;
+}
+
+.tutor-content > h1 {
+    background-color: #921a404b;
+    width: 50px;
+    padding: 10px;
+    /* font-size: 1.2em; */
+    text-align: center;
+    color: #921A40;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

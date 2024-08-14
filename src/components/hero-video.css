@@ -1,0 +1,49 @@
+.hero-video {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.video-content {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    /* Optional: to make rounded corners */
+}
+
+.video-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: none;
+}
+
+.video-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.play-icon {
+    font-size: 24px;
+    display: none;
+    /* Set the color of the icon, e.g., red */
+}
+
+.hero-video:hover {
+    .video-button, .play-icon {
+        display: block;
+    }
+
+    .video-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
