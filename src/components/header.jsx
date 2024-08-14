@@ -58,7 +58,7 @@ const Header = () => {
           </ul>
         </ul>
       </nav>
-      <div className="hero" id="home">
+      <div className="hero hero-responsive-web" id="home">
         <div className="hero-text" data-aos="fade-up">
           <p className="hero-text-1">#No 1 School In Kivotos</p>
           <h1>Discover new things to enrich your skill anytime anywhere</h1>
