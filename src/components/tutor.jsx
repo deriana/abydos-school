@@ -5,7 +5,7 @@ const Tutor = () => {
     <div className="tutor">
       <div className="tutor-text" data-aos="fade-up">
         <h1>
-          How can you <br /> reach to us?
+          How can you reach to us?
         </h1>
         <p>
           Education began in prehistory, as adult trained the young in the

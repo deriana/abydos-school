@@ -234,7 +234,7 @@ a:hover {
 }
 
 .nav {
-    position:fixed;
+    position:sticky;
     top: 0;
     z-index: 10000;
     background: transparent;
@@ -264,3 +264,4 @@ header {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+

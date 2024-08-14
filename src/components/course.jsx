@@ -2,7 +2,6 @@ import "./course.css";
 import { useState } from "react";
 
 const Course = () => {
-  // Initialize state with the initial course items
   const [courses, setCourses] = useState([
     {
       icon: "fa-solid fa-microscope",
@@ -34,7 +33,6 @@ const Course = () => {
     },
   ]);
 
-  // Function to toggle the last two course items
   const handleShow = () => {
     const newCourses = [
       {
@@ -67,7 +65,6 @@ const Course = () => {
       },
     ];
 
-    // Check if the last two courses are the ones we want to toggle
     const lastTwoCourses = courses.slice(-4);  
 
     if (
@@ -75,10 +72,8 @@ const Course = () => {
       lastTwoCourses[0].title === newCourses[0].title &&
       lastTwoCourses[1].title === newCourses[1].title
     ) {
-      // Remove the last two course items if they match
       setCourses(courses.slice(0, -4));
     } else {
-      // Add the new course items if they aren't already present
       setCourses([...courses, ...newCourses]);
     }
   };

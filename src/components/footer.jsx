@@ -13,16 +13,16 @@ const Footer = () => {
           knowledge and skills.
         </p>
         <div className="nav-sosmed">
-          <a href="#">
+          <a href="https://www.facebook.com/jerri.maruf" target="_blank">
             <i className="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/hi_deri_/" target="_blank">
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/deriana" target="_blank">
             <i className="fa-brands fa-github"></i>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/deryana-maruf-00b926292/" target="_blank">
             <i className="fa-brands fa-linkedin-in"></i>{" "}
           </a>
         </div>

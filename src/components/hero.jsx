@@ -2,7 +2,7 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero hero-container">
+    <div className="hero hero-container hero-responsive">
             <div className="hero-img" data-aos="fade-up"></div>
       <div className="hero-text" data-aos="fade-up">
         <p className="hero-text-1">#No 1 School In Kivotos</p>
