@@ -253,7 +253,6 @@
 
     footer {
         flex-direction: column;
-        padding: 5% 2%;
         gap: 40px;
     }
 
@@ -317,5 +316,9 @@
     .hero-responsive-web {
         display: flex;
         flex-direction: column !important;
+    }
+
+    .hero-text {
+        width: 50%;
     }
 }
