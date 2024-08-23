@@ -2,7 +2,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer data-aos="fade-up" id="footer">
+    <footer id="footer">
       <div className="title-footer" data-aos="fade-up">
         <div className="nav-logo">
           <i className="fa-solid fa-graduation-cap"></i>
