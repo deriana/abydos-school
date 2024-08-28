@@ -348,4 +348,8 @@
         display: flex;
         flex-direction: column !important;
     }
+
+    .bubble {
+        display: none;
+    }
 }

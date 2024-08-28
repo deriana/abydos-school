@@ -71,3 +71,48 @@
 .word-img-round:nth-child(2) {
     left: 85%;
 }
+
+.bubble {
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/shiroko.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    animation: Rotate 10s infinite linear;
+    -webkit-animation: Rotate 20s infinite linear;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
+}
+
+@keyframes Rotate {
+    transform {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.bubble:nth-child(2) {
+    background-image: url(../assets/ayane.jpeg);
+    left: 80%;
+    top: -10%;
+}
+
+.bubble:nth-child(3) {
+    background-image: url(../assets/serika.jpeg);
+    left: 65%;
+    top: 5%;
+}
+
+.bubble:nth-child(4) {
+    background-image: url(../assets/yume.jpg);
+    left: 40%;
+    top: 20%;
+}
