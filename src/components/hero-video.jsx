@@ -19,7 +19,7 @@ const HeroVideo = () => {
   return (
     <div className="hero hero-container" id="tutor">
       <div className="hero-video" data-aos="fade-up">
-        <video ref={videoRef} className="video-content" width="600" controls={false}>
+        <video ref={videoRef} className="video-content" width="600" controls>
           <source src={VideoFile} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

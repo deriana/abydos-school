@@ -9,7 +9,6 @@
     height: auto;
     display: block;
     border-radius: 10px;
-    /* Optional: to make rounded corners */
 }
 
 .video-button {
@@ -46,4 +45,8 @@
         align-items: center;
         justify-content: center;
     }
+}
+
+.video-button {
+    display: none !important;
 }
