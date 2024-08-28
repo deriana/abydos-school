@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./header.css";
 
 const Header = () => {
   const [isNavScrolled, setIsNavScrolled] = useState(false);
   const [isResponsiveNavOpen, setIsResponsiveNavOpen] = useState(false);
+  const navRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,13 +24,39 @@ const Header = () => {
 
   const toggleResponsiveNav = () => {
     setIsResponsiveNavOpen((prev) => !prev);
+    if (!isResponsiveNavOpen) {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
   };
+
+  const closeResponsiveNav = () => {
+    setIsResponsiveNavOpen(false);
+  };
+
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      closeResponsiveNav();
+    }
+  };
+
+  useEffect(() => {
+    if (isResponsiveNavOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isResponsiveNavOpen]);
 
   return (
     <header className="header">
       <nav
         className={`nav ${isNavScrolled ? "nav-scrolled" : ""}`}
-        data-aos="fade-up">
+        data-aos="fade-up"
+      >
         <div className="nav-logo">
           <i className="fa-solid fa-graduation-cap"></i>
           <h3>Abydos</h3>
@@ -56,20 +83,21 @@ const Header = () => {
             </li>
           </ul>
           <i
-            className="fa-solid fa-bars"
+            className={`fa-solid ${isResponsiveNavOpen ? "fa-x" : "fa-bars"}`}
             onClick={toggleResponsiveNav}
           ></i>
           <div
+            ref={navRef}
             className={`responsive-nav ${
               isResponsiveNavOpen ? "open" : ""
             }`}
           >
-            <a href="#home" onClick={toggleResponsiveNav}>Home</a>
-            <a href="#features" onClick={toggleResponsiveNav}>Features</a>
-            <a href="#categories" onClick={toggleResponsiveNav}>Courses</a>
-            <a href="#tutor" onClick={toggleResponsiveNav}>Tutor</a>
-            <a href="#blog" onClick={toggleResponsiveNav}>Blog</a>
-            <a href="#footer" onClick={toggleResponsiveNav}>Footer</a>
+            <a href="#home" onClick={closeResponsiveNav}>Home</a>
+            <a href="#features" onClick={closeResponsiveNav}>Features</a>
+            <a href="#categories" onClick={closeResponsiveNav}>Courses</a>
+            <a href="#tutor" onClick={closeResponsiveNav}>Tutor</a>
+            <a href="#blog" onClick={closeResponsiveNav}>Blog</a>
+            <a href="#footer" onClick={closeResponsiveNav}>Footer</a>
           </div>
         </ul>
       </nav>

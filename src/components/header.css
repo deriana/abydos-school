@@ -265,7 +265,7 @@ header {
     -o-transition: 0.5s;
 }
 
-.fa-bars {
+.fa-bars, .fa-x {
     font-size: 2em;
     color: #921A40;
     cursor: pointer;
