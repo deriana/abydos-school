@@ -34,7 +34,7 @@ const Word = () => {
           <p>
             Abydos is really helped me a lot, i would highly recomended Abydos.
           </p>
-          <h3>Nonomi</h3>
+          <h3>Izayoi Nonomi</h3>
         </div>
       </div>
     </div>
