@@ -23,7 +23,7 @@ const Footer = () => {
             <i className="fa-brands fa-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/deryana-maruf-00b926292/" target="_blank">
-            <i className="fa-brands fa-linkedin-in"></i>{" "}
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </div>

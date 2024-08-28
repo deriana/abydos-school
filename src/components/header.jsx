@@ -3,6 +3,7 @@ import "./header.css";
 
 const Header = () => {
   const [isNavScrolled, setIsNavScrolled] = useState(false);
+  const [isResponsiveNavOpen, setIsResponsiveNavOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,9 +21,15 @@ const Header = () => {
     };
   }, []);
 
+  const toggleResponsiveNav = () => {
+    setIsResponsiveNavOpen((prev) => !prev);
+  };
+
   return (
     <header className="header">
-      <nav className={`nav ${isNavScrolled ? "nav-scrolled" : ""}`} data-aos="fade-up">
+      <nav
+        className={`nav ${isNavScrolled ? "nav-scrolled" : ""}`}
+        data-aos="fade-up">
         <div className="nav-logo">
           <i className="fa-solid fa-graduation-cap"></i>
           <h3>Abydos</h3>
@@ -48,14 +55,22 @@ const Header = () => {
               <a href="#footer">Footer</a>
             </li>
           </ul>
-          <ul>
-            <button className="nav-button log-in">
-              <a href="#">Log In</a>
-            </button>
-            <button className="nav-button sign-in">
-              <a href="#">Sign Up</a>
-            </button>
-          </ul>
+          <i
+            className="fa-solid fa-bars"
+            onClick={toggleResponsiveNav}
+          ></i>
+          <div
+            className={`responsive-nav ${
+              isResponsiveNavOpen ? "open" : ""
+            }`}
+          >
+            <a href="#home" onClick={toggleResponsiveNav}>Home</a>
+            <a href="#features" onClick={toggleResponsiveNav}>Features</a>
+            <a href="#categories" onClick={toggleResponsiveNav}>Courses</a>
+            <a href="#tutor" onClick={toggleResponsiveNav}>Tutor</a>
+            <a href="#blog" onClick={toggleResponsiveNav}>Blog</a>
+            <a href="#footer" onClick={toggleResponsiveNav}>Footer</a>
+          </div>
         </ul>
       </nav>
       <div className="hero hero-responsive-web" id="home">
